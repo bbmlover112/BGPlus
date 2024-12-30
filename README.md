@@ -1,1 +1,1 @@
-# BGplus
+# BGPlus
