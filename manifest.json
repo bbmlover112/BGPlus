@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "BGPlus",
+    "description": "Utilities.",
+    "version": "1.0",
+    "action": {
+      "default_popup": "main.html",
+      "default_icon": "logo.png"
+    },
+    "permissions": [
+      "storage"
+    ],
+    "content_scripts": [
+    {
+      "world": "MAIN",
+      "js": ["main.js"],
+      "css": ["main.css"],
+      "matches": [
+        "https://bloxgame.com/*",
+        "https://bloxgame.com/*/*",
+
+        "https://bloxgame.us/*",
+        "https://bloxgame.us/*/*"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+  }
